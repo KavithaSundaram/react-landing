@@ -8,7 +8,7 @@ import { Form } from "react-bootstrap";
 const Comments = () => {
   return (
     <section id="contact" className="bg-light py-3">
-      <div className="text-center my-2 py-3">
+      <div className="text-center my-5 py-3">
         <h2 className=" text-primary">
           Comments 
         </h2>
@@ -24,7 +24,8 @@ const Comments = () => {
               >
               <Form.Control type="email" placeholder="name@example.com" />
               </FloatingLabel>
-              <FloatingLabel controlId="floatingPassword" label="Password">
+             
+              <FloatingLabel controlId="floatingPassword" label="Password" className="mb-3">
                 <Form.Control type="password" placeholder="Password" />
               </FloatingLabel>
               <FloatingLabel

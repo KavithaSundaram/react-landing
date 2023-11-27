@@ -11,6 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-navbar{
-  position: fixed;
+
+nav a{
+  text-decoration: none;
+  padding-right: 10px;
+  font-size: 18px;
+  color: #000;
+}
+.carouselitem img{
+  height: 600px;
+  object-fit: cover;
 }

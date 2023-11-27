@@ -12,8 +12,8 @@ const PickoftheWeek = () => {
     const [show, setShow] = useState(false);
 
   return (
-    <section id="musttry" className="my-3">
-      <div className="text-center my-2 py-3">
+    <section id="musttry" className="my-2">
+      <div className="text-center my-5 py-4 pb-2">
         <h2 className="display-5 text-primary">
            Pick of the Week!
         </h2>

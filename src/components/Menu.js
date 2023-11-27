@@ -1,3 +1,4 @@
+
 import React,{useState} from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import PizzaCard from "./PizzaCard";
@@ -5,10 +6,10 @@ import PizzaCard from "./PizzaCard";
 const Menu = () => {
   const [menu] = useState([1, 2, 3, 4, 5, 6]);
   return (
-    <section id="menu" className="bg-light">
+    <section className="bg-light">
       <Container>
         <div className="text-center">
-          <h3 className="text-primary my-3 py-5">
+          <h3 className="text-primary my-5 py-5 pb-1">
             Treat yourself with our Everyday Menu
           </h3>
         </div>

@@ -1,21 +1,28 @@
-import "./App.css";
-import AppBar from "./components/AppBar";
-import Banner from "./components/Banner";
-import Menu from "./components/Menu";
-import PickoftheWeek from "./components/PickoftheWeek";
-import Comments from "./components/Comments";
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import AppBar from './Components/AppBar';
+import Banner from './Components/Banner'
+import Menu from './Components/Menu'
+import PickoftheWeek from "./Components/PickoftheWeek.js";
+import Comments from "./Components/Comments.js";
+import {Routes,Route} from 'react-router-dom'
 
-function App() {
+const App = () => {
   return (
-    <>
-      <AppBar />
-      <Banner />
-      <Menu/>
-      <PickoftheWeek/>
-      <Comments/>
-      <div className="text-center my-3 text-primary small">Copyright 2022-2023</div>
-    </>
-  );
+    <div>
+      <AppBar/>
+      <Routes>
+        <Route path='/'element={<Banner/>}></Route>
+        <Route path='/menu'element={<Menu/>} ></Route>
+        <Route path="/pickoftheWeek" element={<PickoftheWeek/>}></Route>
+        <Route path="/comments" element={<Comments/>}></Route>
+      </Routes>
+    </div>
+  )
+  
 }
+export default App
 
-export default App;
+
+
+

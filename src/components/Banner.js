@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
@@ -5,58 +6,56 @@ import Carousel from "react-bootstrap/Carousel";
 const Banner = () => {
   return (
     <Container fluid>
-      <Row className="justify-content-center align-items-center">
-        <Col lg={8}>
-          <Carousel className="mt-3">
+      <Row className="justify-content-center align-items-center mt-3">
+        <Col lg={10}>
+          <Carousel className="carouselitem mt-5">
             <Carousel.Item interval={2000}>
               <img
-                className="d-block w-100 h-600"
-                src={require("../assets/ones.jpeg")}
+                className="d-block w-100 h-400"
+                src={require("../assets/mini-idle.jpg")}
                 alt="First slide"
               />
               <Carousel.Caption>
-                <h3>Margherita</h3>
+                <h3 className="display-5 mt-1">Where there is Food there is Love</h3>
+                <h3>Idly</h3>
                 <p className="d-none d-sm-block">
-                  Nulla vitae elit libero, a pharetra augue mollis interdum.
+                Idli or idly is a type of savoury rice cake,popular as a breakfast food in Southern India.
                 </p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={2000}>
               <img
-                className="d-block w-100 h-600"
-                src={require("../assets/ones.jpeg")}
+                className="d-block w-100 h-400"
+                src={require("../assets/idli-vada.png")}
                 alt="Second slide"
               />
 
               <Carousel.Caption>
-                <h3>Cheese Pizza</h3>
+                <h3 className="display-5 mt-1">Where there is Food there is Love</h3>
+                <h3>Venpongal</h3>
                 <p className="d-none d-sm-block">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Ven pongal recipe made with moong lentils, rice, spices and curry leaves. 
                 </p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={2000}>
               <img
-                className="d-block w-100 h-600"
-                src={require("../assets/ones.jpeg")}
+                className="d-block w-100 h-400"
+                src={require("../assets/dish-dosa.jpg")}
                 alt="Third slide"
               />
-
               <Carousel.Caption>
-                <h3>Pepporoni</h3>
+              <h3 className="display-5 mt-1">Where there is Food there is Love</h3>
+                <h3>Dosa</h3>
                 <p className="d-none d-sm-block">
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur.
+                A dosa is a thin savory crepe in South Indian cuisine made from a fermented batter of ground black lentils and rice. 
                 </p>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
         </Col>
       </Row>
-      <div className="text-center">
-        <h2 className="display-5 mt-3">Pizzas for Every Occasion!</h2>
-        <p className="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-      </div>
+      
     </Container>
   );
 };

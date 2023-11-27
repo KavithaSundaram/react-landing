@@ -16,15 +16,14 @@ const PizzaCard = () => {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Modal heading
+            Add Now
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h4>Centered Modal</h4>
+          <h4>Receipe</h4>
           <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-            consectetur ac, vestibulum at eros.
+            Ready to add basket<br/>
+            Added to the basket!!
           </p>
         </Modal.Body>
         <Modal.Footer>
@@ -37,12 +36,12 @@ const PizzaCard = () => {
 
   return (
     <>
-      <Card className="m-3">
-        <Card.Img variant="top" src={require("../assets/pizza.jpeg")} />
+      <Card className="m-2">
+        <Card.Img variant="top" src={require("../assets/ghee-roast.jpg")} />
         <Card.Body>
-          <Card.Title>Cheese Pizza</Card.Title>
+          <Card.Title>Idle Dosa</Card.Title>
           <Card.Text>
-          Pizza is a dish of Italian origin consisting of a usually round, flat base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients, which is then baked at a high temperature, traditionally in a wood-fired oven.
+              Idli or idly is a type of savoury rice cake, originating from South India, popular as a breakfast food in Southern India and in Sri Lanka.
           </Card.Text>
           <div className="text-center">
             <Button variant="primary" onClick={() => setModalShow(true)}>
