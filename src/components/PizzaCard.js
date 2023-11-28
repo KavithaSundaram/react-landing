@@ -36,7 +36,7 @@ const PizzaCard = () => {
 
   return (
     <>
-      <Card className="m-2">
+      <Card className="mt-2">
         <Card.Img variant="top" src={require("../assets/ghee-roast.jpg")} />
         <Card.Body>
           <Card.Title>Idle Dosa</Card.Title>
